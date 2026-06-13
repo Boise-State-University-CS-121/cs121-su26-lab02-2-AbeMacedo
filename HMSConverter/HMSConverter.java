@@ -15,9 +15,7 @@ public class HMSConverter
         System.out.print("Enter the number of seconds: ");
         int numSec = keyInput.nextInt();
 
-        int totalSec = ((numHrs / 60) / 60) + ((numMin / 60) * 3600) + numSec;
-
-
+        int totalSec = (numHrs * 3600) + (numMin * 60) + numSec;
         System.out.println("Total seconds: " + totalSec);
 
         keyInput.close();
