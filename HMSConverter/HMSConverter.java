@@ -6,19 +6,19 @@ public class HMSConverter
     {
         Scanner keyInput = new Scanner(System.in);
 
-        System.out.println("Enter the number of hours: ");
-        int numHours = keyInput.nextInt();
+        System.out.print("Enter the number of hours: ");
+        int numHrs = keyInput.nextInt();
 
-        System.out.println("Enter the number of minutes: ");
-        int numMinutes = keyInput.nextInt();
+        System.out.print("Enter the number of minutes: ");
+        int numMin = keyInput.nextInt();
 
-        System.out.println("Enter the number of seconds: ");
-        int numSeconds = keyInput.nextInt();
+        System.out.print("Enter the number of seconds: ");
+        int numSec = keyInput.nextInt();
 
-        int totalSeconds = ();
+        int totalSec = ((numHrs / 60) / 60) + ((numMin / 60) * 3600) + numSec;
 
 
-        System.out.println("Total seconds: " + totalSeconds);
+        System.out.println("Total seconds: " + totalSec);
 
         keyInput.close();
 
